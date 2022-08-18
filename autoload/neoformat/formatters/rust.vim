@@ -1,10 +1,10 @@
 function! neoformat#formatters#rust#enabled() abort
-    return ['rustfmt']
+    return ['cargo fmt']
 endfunction
 
 function! neoformat#formatters#rust#rustfmt() abort
     return {
-        \ 'exe': 'rustfmt',
+        \ 'exe': 'cargo fmt',
         \ 'stdin': 1,
         \ }
 endfunction
